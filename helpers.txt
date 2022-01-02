@@ -1,0 +1,15 @@
+
+
+
+/***************  using environments with no problem in different oss*************/
+
+-npm i env-cmd
+
+
+
+
+
+/*********************** Testing Frameworks**************************/
+1- jestjs    //npm i jest --save-dev (useing on this proj)
+OR
+2- mochajs
