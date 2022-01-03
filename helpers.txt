@@ -5,8 +5,8 @@
 
 -npm i env-cmd
 
-
-
+/*********************** http package request for testing **************************************************/
+-npm i super test --save-dev
 
 
 /*********************** Testing Frameworks**************************/

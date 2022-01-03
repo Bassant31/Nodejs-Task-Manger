@@ -1,12 +1,8 @@
-const express = require('express')
-const res = require('express/lib/response')
-const userRouter = require('./routers/user')
-const taskRouter = require('./routers/task')
-require('./db/mongoose')
-
-
-const app = express()
+const app = require('./app')
 const port = process.env.PORT 
+app.listen(port , ()=>{
+    console.log("Server listen on "+ port)
+})
 
 /*app.use((req,res,next)=>{
     res.status(503).send("WE ARE AT MINTANINCE MODE")
@@ -40,14 +36,9 @@ app.post('/upload',upload.single('upload'),(req,res)=>{
 })
 */
 
-app.use(express.json())
-app.use(userRouter)
-app.use(taskRouter)
 
-app.listen(port , ()=>{
-    console.log("Server listen on "+ port)
-})
 
+/*
 
 const Task = require('./models/task')
 
@@ -56,4 +47,4 @@ const main = async ()=>{
   //console.log(task.owner)
 }
 
-main()
+main()*/
